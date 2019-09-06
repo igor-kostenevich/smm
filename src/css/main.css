@@ -36,10 +36,49 @@
 * {
   margin: 0;
   padding: 0;
-  outline: none;
+}
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none;
 }
 .img-thumbnail {
   border: none;
+}
+.underline {
+  line-height: 47px;
+}
+.underline:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 95%;
+  background-color: #fb5602;
+  margin: 0 auto;
+  line-height: 10px;
+}
+.main-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20rem;
+}
+.main-title h2 {
+  color: #2b2b2b;
+  font-family: 'Akrobat Regular';
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  line-height: 47px;
+}
+.main-title h2:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 95%;
+  background-color: #fb5602;
+  margin: 0 auto;
+  line-height: 10px;
 }
 html {
   font-size: 10px;
@@ -54,6 +93,17 @@ body {
 .navbar {
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
+}
+.navbar .navbar-toggler .line:after {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 20px;
+  margin: .5rem;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  outline: none;
 }
 .navbar .collapse .navbar-nav {
   width: 100%;
@@ -130,4 +180,53 @@ body {
   width: 26px;
   background: url('../../build/img/icon-pointer.png') no-repeat;
   margin-right: 1rem;
+}
+.why-smm {
+  margin-bottom: 20rem;
+}
+.why-smm .why-smm__title {
+  margin-bottom: 20rem;
+}
+.why-smm .decorate-up:nth-of-type(2n+1):before {
+  background: url('../../build/img/decor-up.png') no-repeat;
+  content: '';
+  display: block;
+  width: 270px;
+  height: 95px;
+  position: absolute;
+  left: 50%;
+  top: -110px;
+  right: 0;
+  bottom: 0;
+}
+.why-smm .decorate-up:nth-child(2):after {
+  background: url('../../build/img/decor-up.png') no-repeat;
+  content: '';
+  display: block;
+  width: 270px;
+  height: 95px;
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: rotate(180deg);
+}
+.why-smm .why-smm__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.why-smm .why-smm__item:nth-of-type(even):before {
+  display: none;
+}
+.why-smm .why-smm__item p {
+  width: 66%;
+  text-align: center;
+  line-height: 20px;
+  color: #2b2b2b;
+  font-family: 'Roboto Regular';
+  font-size: 1.125em;
+  font-weight: 400;
+  margin: 4rem 0;
 }
