@@ -1,0 +1,125 @@
+@import 'fonts.less';
+
+@primary-light-color: #ffffff;
+@primary-color-text: #2b2b2b;
+@border-color: #39c7f4;
+@decor-line-color: #fb5602;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.img-thumbnail {
+    border: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+    background-color: @primary-light-color;
+
+    .collapse {
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            li {
+                margin: 0 2.5rem;
+
+                a {
+                    color: @primary-color-text;
+                    font-family: 'Roboto Light';
+                    font-size: 1em;
+                    font-weight: 300;
+
+                    &:after {
+                        display: block;
+                        content: "";
+                        height: 1px;
+                        width: 0%;
+                        background-color: @border-color;
+                        transition: width .2s ease-in-out;
+                    }
+
+                    &:hover:after,
+                    &:focus:after {
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.smm {
+    padding: 4rem 0;
+    background: url(../../build/img/smm-bg.png) center right no-repeat;
+
+    .smm-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 750px;
+
+        h1 {
+            color: @primary-color-text;
+            font-family: 'Akrobat Bold';
+            font-size: 4.5rem;
+            margin-top: 9rem;
+            line-height: 72px;
+        }
+
+        button {
+            margin: 3rem 0;
+            color: @primary-light-color;
+            font-family: 'Roboto Regular';
+            font-size: 1em;
+            font-weight: 400;
+            padding: 1.7rem 6rem;
+            background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            border: 0;
+            &:hover {
+                background-image: linear-gradient(to top, lighten(#fb5503, 5%) 0%, lighten(#ffa200, 5%) 100%);
+            }
+        }
+
+        span {
+            color: @primary-color-text;
+            font-family: 'Roboto Medium';
+            font-size: 1em;
+            font-weight: 500;
+            transform: translateX(30%);
+            text-align: right;
+            &:before {
+                content: '';
+                display: inline-block;
+                height: 28px;
+                width: 26px;
+                background: url('../../build/img/icon-pointer.png') no-repeat;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
