@@ -40,21 +40,21 @@ button:active {
     }
 }
 
-.main-button{
-        margin: 3rem 0;
-        color: @primary-light-color;
-        font-family: 'Roboto Regular';
-        font-size: 1em;
-        font-weight: 400;
-        padding: 1.7rem 6rem;
-        background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
-        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
-        border-radius: 12px;
-        border: 0;
+.main-button {
+    margin: 3rem 0;
+    color: @primary-light-color;
+    font-family: 'Roboto Regular';
+    font-size: 1em;
+    font-weight: 400;
+    padding: 1.7rem 6rem;
+    background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border: 0;
 
-        &:hover {
-            background-image: linear-gradient(to top, lighten(#fb5503, 5%) 0%, lighten(#ffa200, 5%) 100%);
-        }
+    &:hover {
+        background-image: linear-gradient(to top, lighten(#fb5503, 5%) 0%, lighten(#ffa200, 5%) 100%);
+    }
 }
 
 
@@ -166,7 +166,7 @@ body {
         button {
             .main-button;
         }
-    
+
         span {
             color: @primary-color-text;
             font-family: 'Roboto Medium';
@@ -333,6 +333,7 @@ body {
     .our-projects__button {
         text-align: center;
         width: 100%;
+
         button {
             .main-button;
             padding: 1.2rem 1.5rem;
@@ -347,6 +348,7 @@ body {
     .benefits__title {
         margin: 10rem 0 7rem;
     }
+
     .benefits__item {
         display: flex;
         flex-direction: column;
@@ -363,6 +365,105 @@ body {
             font-size: 1.125em;
             font-weight: 400;
             margin: 4rem 0;
+        }
+    }
+}
+
+// Reviews
+
+.reviews {
+    padding-bottom: 10rem;
+
+    .reviews__title {
+        margin: 10rem 0 2rem;
+    }
+
+    .reviews__gallery {
+        width: 100%;
+
+        background: url(../../build/img/bg-decorate2.png) 0 34% no-repeat;
+
+        .reviews__carousel {
+
+            .reviews__card {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                background-image: linear-gradient(to top, #298fb0 0%, @border-color 100%);
+                position: relative;
+                padding: 12rem 0 4rem;
+                margin: 17rem auto 0;
+
+                .reviews__card-img {
+                    background: transparent;
+                    position: absolute;
+                    top: -130px;
+                    left: 21%;
+
+                }
+
+
+                .reviews__card-name {
+                    h4 {
+                        color: @primary-light-color;
+                        font-family: 'Akrobat Bold';
+                        font-size: 1.625em;
+                        font-weight: 700;
+                    }
+                }
+
+                .reviews__card-desc {
+                    p {
+                        color: @primary-light-color;
+                        font-family: 'Roboto Regular';
+                        font-size: 1em;
+                        font-weight: 400;
+                    }
+                }
+
+                .reviews__card-text {
+                    width: 85%;
+                    margin: 0 auto;
+
+                    p {
+                        color: #fffefe;
+                        font-family: 'Roboto Light';
+                        font-size: .87em;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.slide {
+    height: 50vh;
+    background: #aaa;
+    width: 350px;
+}
+
+.abc {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #aaa;
+    height: 100vh;
+
+    .abc-slide {
+        background: #fff;
+        height: 50vh;
+        width: 33%;
+
+        span {
+            background-color: #ccc;
         }
     }
 }

@@ -356,3 +356,75 @@ body {
   font-weight: 400;
   margin: 4rem 0;
 }
+.reviews {
+  padding-bottom: 10rem;
+}
+.reviews .reviews__title {
+  margin: 10rem 0 2rem;
+}
+.reviews .reviews__gallery {
+  width: 100%;
+  background: url(../../build/img/bg-decorate2.png) 0 34% no-repeat;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #298fb0 0%, #39c7f4 100%);
+  position: relative;
+  padding: 12rem 0 4rem;
+  margin: 17rem auto 0;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card .reviews__card-img {
+  background: transparent;
+  position: absolute;
+  top: -130px;
+  left: 21%;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card .reviews__card-name h4 {
+  color: #ffffff;
+  font-family: 'Akrobat Bold';
+  font-size: 1.625em;
+  font-weight: 700;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card .reviews__card-desc p {
+  color: #ffffff;
+  font-family: 'Roboto Regular';
+  font-size: 1em;
+  font-weight: 400;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card .reviews__card-text {
+  width: 85%;
+  margin: 0 auto;
+}
+.reviews .reviews__gallery .reviews__carousel .reviews__card .reviews__card-text p {
+  color: #fffefe;
+  font-family: 'Roboto Light';
+  font-size: .87em;
+  font-weight: 300;
+  line-height: 24px;
+}
+.slide {
+  height: 50vh;
+  background: #aaa;
+  width: 350px;
+}
+.abc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #aaa;
+  height: 100vh;
+}
+.abc .abc-slide {
+  background: #fff;
+  height: 50vh;
+  width: 33%;
+}
+.abc .abc-slide span {
+  background-color: #ccc;
+}
