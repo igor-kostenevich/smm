@@ -84,7 +84,7 @@ body {
 
 
 .wrapper {
-    max-width: 1170px;
+    // max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -254,7 +254,7 @@ body {
     }
 
     .our-projects__gallery {
-        background: url('../../build/img/bg-decorate.png') 0 69.5% no-repeat;
+        background: url('../../build/img/bg-decorate.png') 0 73% no-repeat;
         width: 100%;
 
         .our-project__carousel {
@@ -443,27 +443,96 @@ body {
 }
 
 
+.price {
+    position: relative;
+    background: url('../../build/img/BG_Like.png') 68% 7% no-repeat;
 
-.slide {
-    height: 50vh;
-    background: #aaa;
-    width: 350px;
-}
+    .price__title {
+        padding-bottom: 6rem;
+    }
 
-.abc {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background: #aaa;
-    height: 100vh;
+    .price_bg {
+        height: 53%;
+        width: 100%;
+        background-image: linear-gradient(to top, #298fb0 0%, @border-color 100%);
+        position: absolute;
+        top: 16%;
+        left: 0;
+        z-index: -50;
+    }
 
-    .abc-slide {
-        background: #fff;
-        height: 50vh;
-        width: 33%;
+    .price-content {
+        display: flex;
+        width: 100%;
+        z-index: 15px;
+    }
+
+    .separator_price {
+        background: url(../../build/img/decor3.png) no-repeat;
+        position: absolute;
+        bottom: 17%;
+        width: 76%;
+        margin: 0 auto;
+        height: 8px;
+        z-index: -16;
+
+    }
+
+    .price__card--container {
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1.5rem 4.5rem;
+        display: flex;
+        height: max-content;
+        background: @primary-light-color;
+    }
+
+    .price__card {
+        border-radius: 20px;
+        border: 2px solid @border-color;
+        background-color: @primary-light-color;
+        padding: 3rem 2rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .price__card-title {
+            h4 {
+                color: @primary-color-text;
+                font-family: 'Akrobat Bold';
+                font-size: 2em;
+                font-weight: 700;
+            }
+        }
+
+        .price__card-list {
+            width: 90%;
+            margin: 0 auto;
+
+            li {
+                list-style-image: url('../../build/img/list-icon2.png');
+                line-height: 16px;
+                margin: 1.5rem 0;
+                color: @primary-color-text;
+                font-family: 'Roboto Light';
+                font-size: .87;
+                font-weight: 300;
+            }
+        }
 
         span {
-            background-color: #ccc;
+            margin: 2.2rem 0 1rem;
+            color: @primary-color-text;
+            font-family: 'Akrobat Bold';
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        button {
+            .main-button;
+            margin: 0;
+            padding: 1.8rem 4.1rem;
         }
     }
 }

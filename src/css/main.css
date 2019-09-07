@@ -105,7 +105,6 @@ body {
   font-size: 16px;
 }
 .wrapper {
-  max-width: 1170px;
   margin: 0 auto;
 }
 .navbar {
@@ -252,7 +251,7 @@ body {
   margin-bottom: 6rem;
 }
 .our-projects .our-projects__gallery {
-  background: url('../../build/img/bg-decorate.png') 0 69.5% no-repeat;
+  background: url('../../build/img/bg-decorate.png') 0 73% no-repeat;
   width: 100%;
 }
 .our-projects .our-projects__gallery .our-project__carousel {
@@ -408,23 +407,94 @@ body {
   font-weight: 300;
   line-height: 24px;
 }
-.slide {
-  height: 50vh;
-  background: #aaa;
-  width: 350px;
+.price {
+  position: relative;
+  background: url('../../build/img/BG_Like.png') 68% 7% no-repeat;
 }
-.abc {
+.price .price__title {
+  padding-bottom: 6rem;
+}
+.price .price_bg {
+  height: 53%;
   width: 100%;
+  background-image: linear-gradient(to top, #298fb0 0%, #39c7f4 100%);
+  position: absolute;
+  top: 16%;
+  left: 0;
+  z-index: -50;
+}
+.price .price-content {
   display: flex;
-  flex-direction: row;
-  background: #aaa;
-  height: 100vh;
+  width: 100%;
+  z-index: 15px;
 }
-.abc .abc-slide {
-  background: #fff;
-  height: 50vh;
-  width: 33%;
+.price .separator_price {
+  background: url(../../build/img/decor3.png) no-repeat;
+  position: absolute;
+  bottom: 17%;
+  width: 76%;
+  margin: 0 auto;
+  height: 8px;
+  z-index: -16;
 }
-.abc .abc-slide span {
-  background-color: #ccc;
+.price .price__card--container {
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1.5rem 4.5rem;
+  display: flex;
+  height: max-content;
+  background: #ffffff;
+}
+.price .price__card {
+  border-radius: 20px;
+  border: 2px solid #39c7f4;
+  background-color: #ffffff;
+  padding: 3rem 2rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price .price__card .price__card-title h4 {
+  color: #2b2b2b;
+  font-family: 'Akrobat Bold';
+  font-size: 2em;
+  font-weight: 700;
+}
+.price .price__card .price__card-list {
+  width: 90%;
+  margin: 0 auto;
+}
+.price .price__card .price__card-list li {
+  list-style-image: url('../../build/img/list-icon2.png');
+  line-height: 16px;
+  margin: 1.5rem 0;
+  color: #2b2b2b;
+  font-family: 'Roboto Light';
+  font-size: .87;
+  font-weight: 300;
+}
+.price .price__card span {
+  margin: 2.2rem 0 1rem;
+  color: #2b2b2b;
+  font-family: 'Akrobat Bold';
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.price .price__card button {
+  margin: 3rem 0;
+  color: #ffffff;
+  font-family: 'Roboto Regular';
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1.7rem 6rem;
+  background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  border: 0;
+  margin: 0;
+  padding: 1.8rem 4.1rem;
+}
+.price .price__card button:hover {
+  background-image: linear-gradient(to top, #fc661b 0%, #ffab1a 100%);
 }
