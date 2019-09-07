@@ -1,3 +1,5 @@
+
+// Slick1
 $(document).ready(function () {
 
   $('.our-project__carousel').slick({
@@ -34,6 +36,7 @@ $(document).ready(function () {
 
 });
 
+// Slick2
 $(document).ready(function () {
   $('.reviews__carousel').slick({
     dots: false,
@@ -68,3 +71,32 @@ $(document).ready(function () {
   });
 });
 
+//Scroll
+$(document).ready(function(){
+  $("#nav").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+
+
+//popup
+$(document).ready(function(){
+  $('.open-popup').click(function(){
+    $('.form-popup').css({'top': $(window).scrollTop() +300 }).addClass('db');
+    $('.bg-popup').fadeIn(300);
+
+    $('.bg-popup').click(function(){
+      $('.form-popup').removeClass('db');
+      $('.bg-popup').fadeOut(300);
+    });
+
+  });
+});
+
+
+$(window).scroll(function(){
+  $('.form-popup').css({'top': $(window).scrollTop() +300 })
+}).scroll();
