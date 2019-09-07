@@ -18,6 +18,10 @@ button:active {
     box-shadow: none;
 }
 
+.slick-slide {
+    outline: none;
+}
+
 .img-thumbnail {
     border: none;
 }
@@ -34,6 +38,23 @@ button:active {
         margin: 0 auto;
         line-height: 10px;
     }
+}
+
+.main-button{
+        margin: 3rem 0;
+        color: @primary-light-color;
+        font-family: 'Roboto Regular';
+        font-size: 1em;
+        font-weight: 400;
+        padding: 1.7rem 6rem;
+        background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        border: 0;
+
+        &:hover {
+            background-image: linear-gradient(to top, lighten(#fb5503, 5%) 0%, lighten(#ffa200, 5%) 100%);
+        }
 }
 
 
@@ -143,22 +164,9 @@ body {
         }
 
         button {
-            margin: 3rem 0;
-            color: @primary-light-color;
-            font-family: 'Roboto Regular';
-            font-size: 1em;
-            font-weight: 400;
-            padding: 1.7rem 6rem;
-            background-image: linear-gradient(to top, #fb5503 0%, #ffa200 100%);
-            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
-            border-radius: 12px;
-            border: 0;
-
-            &:hover {
-                background-image: linear-gradient(to top, lighten(#fb5503, 5%) 0%, lighten(#ffa200, 5%) 100%);
-            }
+            .main-button;
         }
-
+    
         span {
             color: @primary-color-text;
             font-family: 'Roboto Medium';
@@ -238,7 +246,7 @@ body {
     }
 }
 
-//OUR-PROJECTS
+//OUR-PROJECTS BLOCK
 .our-projects {
 
     .our-projects__title {
@@ -319,6 +327,42 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .our-projects__button {
+        text-align: center;
+        width: 100%;
+        button {
+            .main-button;
+            padding: 1.2rem 1.5rem;
+            margin: 0;
+        }
+    }
+}
+
+// Benefits BLOCK
+
+.benefits {
+    .benefits__title {
+        margin: 10rem 0 7rem;
+    }
+    .benefits__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        p {
+            width: 66%;
+            text-align: center;
+            line-height: 20px;
+            color: @primary-color-text;
+            font-family: 'Roboto Regular';
+            font-size: 1.125em;
+            font-weight: 400;
+            margin: 4rem 0;
         }
     }
 }

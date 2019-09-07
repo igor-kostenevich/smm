@@ -15,7 +15,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   
     $('.our-project__carousel').slick({
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 300,
         

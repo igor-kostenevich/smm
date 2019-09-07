@@ -80,6 +80,7 @@
 .slick-prev
 {
     left: -23px;
+    z-index: 5;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,7 +89,7 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
     background: url(../build/img/Arrow-prev.png) no-repeat;
     height: 65px;
     width: 50px;
@@ -96,7 +97,7 @@
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '';
 }
 
 .slick-next
@@ -110,7 +111,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
     background: url(../build/img/Arrow_next.png) no-repeat;
     height: 65px;
     width: 50px;
@@ -119,7 +120,7 @@
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
 }
 
 /* Dots */
