@@ -36,6 +36,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 button:focus,
 button:active {
@@ -60,7 +61,6 @@ button:active {
 .main-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 20rem;
 }
 .main-title h2 {
   color: #2b2b2b;
@@ -229,4 +229,71 @@ body {
   font-size: 1.125em;
   font-weight: 400;
   margin: 4rem 0;
+}
+.our-projects .our-projects__title {
+  margin-bottom: 6rem;
+}
+.our-projects .our-projects__gallery {
+  background: url('../../build/img/bg-decorate.png') 0 69.5% no-repeat;
+  width: 100%;
+}
+.our-projects .our-projects__gallery .our-project__carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.our-projects .our-projects__gallery .our-projects__card {
+  height: 490px;
+  background-image: linear-gradient(to top, #298fb0 0%, #39c7f4 100%);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  padding: 5rem 2rem;
+  margin: 20rem 6rem 5rem;
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects--wrapp-img {
+  background-color: #ffffff;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+  width: 235px;
+  height: 235px;
+  transform: rotate(-45deg);
+  padding: 8px;
+  position: absolute;
+  top: -29%;
+  left: 5%;
+  border-radius: 20px;
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects__card-img {
+  height: 219px;
+  border: 2px solid #39c7f4;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects__card-img img {
+  transform: rotate(45deg);
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects__card-info {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects__card-info h3 {
+  color: #ffffff;
+  font-family: 'Akrobat Bold';
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: center;
+}
+.our-projects .our-projects__gallery .our-projects__card .our-projects__card-info ul li {
+  list-style-image: url('../../build/img/list-icon.png');
+  color: #ffffff;
+  font-family: 'Akrobat Regular';
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1.5rem 0;
 }

@@ -9,13 +9,15 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 button:focus,
 button:active {
     outline: none !important;
     box-shadow: none;
- }
+}
+
 .img-thumbnail {
     border: none;
 }
@@ -38,7 +40,7 @@ button:active {
 .main-title {
     text-align: center;
     width: 100%;
-    margin-bottom: 20rem;
+
 
     h2 {
         color: @primary-color-text;
@@ -69,6 +71,7 @@ body {
 .navbar {
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
     background-color: @primary-light-color;
+
     .navbar-toggler {
         .line {
             &:after {
@@ -84,6 +87,7 @@ body {
             }
         }
     }
+
     .collapse {
         .navbar-nav {
             width: 100%;
@@ -175,7 +179,7 @@ body {
     }
 }
 
-//WHAT SMM BLOCK
+//Why SMM BLOCK
 .why-smm {
     margin-bottom: 20rem;
 
@@ -210,18 +214,12 @@ body {
         }
     }
 
-
-
-
-
     .why-smm__item {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
-
-
 
         &:nth-of-type(even):before {
             display: none;
@@ -236,6 +234,91 @@ body {
             font-size: 1.125em;
             font-weight: 400;
             margin: 4rem 0;
+        }
+    }
+}
+
+//OUR-PROJECTS
+.our-projects {
+
+    .our-projects__title {
+        margin-bottom: 6rem;
+    }
+
+    .our-projects__gallery {
+        background: url('../../build/img/bg-decorate.png') 0 69.5% no-repeat;
+        width: 100%;
+
+        .our-project__carousel {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .our-projects__card {
+            height: 490px;
+            background-image: linear-gradient(to top, #298fb0 0%, @border-color 100%);
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            padding: 5rem 2rem;
+            margin: 20rem 6rem 5rem;
+
+            .our-projects--wrapp-img {
+                background-color: @primary-light-color;
+                box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+                width: 235px;
+                height: 235px;
+                transform: rotate(-45deg);
+                padding: 8px;
+                position: absolute;
+                top: -29%;
+                left: 5%;
+                border-radius: 20px;
+            }
+
+            .our-projects__card-img {
+                height: 219px;
+                border: 2px solid @border-color;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    transform: rotate(45deg);
+                }
+            }
+
+            .our-projects__card-info {
+                width: 60%;
+                margin: 0 auto;
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                justify-content: flex-end;
+                height: 100%;
+
+                h3 {
+                    color: @primary-light-color;
+                    font-family: 'Akrobat Bold';
+                    font-size: 1.125em;
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                ul {
+
+                    li {
+                        list-style-image: url('../../build/img/list-icon.png');
+                        color: @primary-light-color;
+                        font-family: 'Akrobat Regular';
+                        font-size: 1em;
+                        font-weight: 400;
+                        margin: 1.5rem 0;
+                    }
+                }
+            }
         }
     }
 }
