@@ -2,16 +2,14 @@
 @import 'mixin.less';
 @import 'variables.less';
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 button:focus,
 button:active {
-    outline: none !important;
+    outline: none;
     box-shadow: none;
+}
+
+* {
+    list-style: none;
 }
 
 
@@ -44,10 +42,18 @@ body {
 }
 
 
-.navbar {
+.header_box-shadow {
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
     background-color: @primary-light-color;
-
+}
+.header_wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+a.navbar-brand {
+    margin-left: 2rem;
+}
+.navbar {
     .navbar-toggler {
         .line {
             &:after {
@@ -65,21 +71,20 @@ body {
     }
 
     .collapse {
-        .navbar-nav {
+        .navbar-list {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             position: relative;
 
-            li {
+            .navbar-list-item{
                 margin: 0 2.5rem;
-
+                
                 a {
                     color: @primary-color-text;
                     font-family: 'Roboto Light';
                     font-size: 1em;
                     font-weight: 300;
-
+                    display: inline-block;
                     &:after {
                         display: block;
                         content: "";
@@ -104,18 +109,25 @@ body {
     padding: 4rem 0;
     background: url(../../build/img/smm-bg.png) center right no-repeat;
 
+    .smm-box_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .smm-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         min-height: 750px;
-
+        .smm-box_container-btn {
+            width: 100%;
+        }
         h1 {
             color: @primary-color-text;
-            font-family: 'Akrobat Bold';
-            font-size: 4.5rem;
+            font-family: 'Akrobat Regular';
+            font-size: 4.5em;
             margin-top: 9rem;
-            line-height: 72px;
+            font-weight: 400;
         }
 
         button {
@@ -226,22 +238,22 @@ body {
             position: relative;
             padding: 5rem 2rem;
             margin: 20rem 6rem 5rem;
-
+            width: 225px;
             .our-projects--wrapp-img {
                 background-color: @primary-light-color;
                 box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
-                width: 235px;
-                height: 235px;
+                width: 216px;
+                height: 217px;
                 transform: rotate(-45deg);
                 padding: 8px;
                 position: absolute;
                 top: -29%;
-                left: 5%;
+                left: 2%;
                 border-radius: 20px;
             }
 
             .our-projects__card-img {
-                height: 219px;
+                height: 202px;
                 border: 2px solid @border-color;
                 border-radius: 20px;
                 display: flex;
@@ -254,7 +266,7 @@ body {
             }
 
             .our-projects__card-info {
-                width: 60%;
+                width: 95%;
                 margin: 0 auto;
                 display: flex;
                 align-items: flex-end;
@@ -420,6 +432,8 @@ body {
         display: flex;
         width: 100%;
         z-index: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .separator_price {
@@ -440,6 +454,7 @@ body {
         margin: 1.5rem 4.5rem;
         display: flex;
         height: max-content;
+        width: 280px;
         background: @primary-light-color;
     }
 
@@ -447,7 +462,7 @@ body {
         border-radius: 20px;
         border: 2px solid @border-color;
         background-color: @primary-light-color;
-        padding: 3rem 2rem 2rem 3rem;
+        padding: 3rem 1rem 2rem 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -540,8 +555,6 @@ body {
         }
     }
 
-
-
     .form-footer {
         .main-form;
 
@@ -587,8 +600,10 @@ body {
 
 .form-popup {
     .main-form;
-    width: 350px;
+    min-width: 270px;
+    width: 20%;
     position: absolute;
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

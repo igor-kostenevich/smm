@@ -19,34 +19,36 @@
 
         <!-- HEADER NAVBAR -->
         <header class="header">
-            <div class="container-fluid fixed-top p-0">
-                <nav class="navbar navbar-expand-lg" id="nav">
-                    <a class="navbar-brand col-5 text-center">
-                        <img src="./build/img/logo.png" class="img-responsive img-thumbnail" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </button>
-                    <div id="my-nav" class="collapse navbar-collapse col-md-7 col-lg-7">
-                        <ul class="navbar-nav mr-auto justify-content-right">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#home">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#benefits">Преимущества</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#price">Пакеты услуг</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacts">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="container-fluid fixed-top p-0 header_box-shadow">
+                <div class="header_wrap">
+                    <nav class="navbar navbar-expand-md navbar-light" id="nav">
+                        <a class="navbar-brand">
+                            <img src="./build/img/logo.png" class="img-responsive img-thumbnail" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse"
+                            aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <div id="my-nav" class="collapse navbar-collapse ">
+                            <ul class="navbar-nav mr-auto navbar-list">
+                                <li class="nav-item active navbar-list-item">
+                                    <a class="nav-link" href="#home">Главная</a>
+                                </li>
+                                <li class="nav-item navbar-list-item">
+                                    <a class="nav-link" href="#benefits">Преимущества</a>
+                                </li>
+                                <li class="nav-item navbar-list-item">
+                                    <a class="nav-link" href="#price">Пакеты услуг</a>
+                                </li>
+                                <li class="nav-item navbar-list-item">
+                                    <a class="nav-link" href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -58,9 +60,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="smm-box">
-                            <h1>SMM продвижение <br> Вашего бизнеса</h1>
-                            <button class="open-popup">продвижение</button>
-                            <span>закажи прямо сейчас</span>
+                            <div class="smm-box_container">
+                                <h1>SMM продвижение <br> Вашего бизнеса</h1>
+
+                                <div class="smm-box_container-btn">
+                                    <button class="open-popup">продвижение</button>
+                                </div>
+                                <span>закажи прямо сейчас</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,7 +81,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-3 decorate-up">
+                        <div class="col-sm-6 col-md-3 col-lg-3 decorate-up">
                             <div class="why-smm__item">
                                 <div class="why-smm__item-img">
                                     <img src="./build/img/icon1.png" class="img-thumbnail" alt="">
@@ -82,7 +89,7 @@
                                 <p>Актуальный способ продвижения услуг и товаров</p>
                             </div>
                         </div>
-                        <div class="col-lg-3 decorate-up">
+                        <div class="col-sm-6 col-md-3 col-lg-3 decorate-up">
                             <div class="why-smm__item">
                                 <div class="why-smm__item-img">
                                     <img src="./build/img/icon2.png" class="img-thumbnail" alt="">
@@ -90,7 +97,7 @@
                                 <p>Получение отзывов от реальной целевой аудитории </p>
                             </div>
                         </div>
-                        <div class="col-lg-3 decorate-up">
+                        <div class="col-sm-6 col-md-3 col-lg-3 decorate-up">
                             <div class="why-smm__item ">
                                 <div class="why-smm__item-img">
                                     <img src="./build/img/icon3.png" class="img-thumbnail" alt="">
@@ -98,7 +105,7 @@
                                 <p>Живое общение с посетителями Вашей группы </p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="why-smm__item">
                                 <div class="why-smm__item-img">
                                     <img src="./build/img/icon4.png" class="img-thumbnail" alt="">
@@ -259,7 +266,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="benefits__item">
                                 <div class="benefits__item-img">
                                     <img src="./build/img/icon5.png" class="img-thumbnail" alt="">
@@ -267,7 +274,7 @@
                                 <p>Актуальный способ продвижения услуг и товаров</p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="benefits__item">
                                 <div class="benefits__item-img">
                                     <img src="./build/img/icon6.png" class="img-thumbnail" alt="">
@@ -275,7 +282,7 @@
                                 <p>Получение отзывов от реальной целевой аудитории </p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="benefits__item ">
                                 <div class="benefits__item-img">
                                     <img src="./build/img/icon7.png" class="img-thumbnail" alt="">
@@ -283,7 +290,7 @@
                                 <p>Живое общение с посетителями Вашей группы </p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-sm-6 col-md-3 col-lg-3">
                             <div class="benefits__item">
                                 <div class="benefits__item-img">
                                     <img src="./build/img/icon8.png" class="img-thumbnail" alt="">
